@@ -1,6 +1,9 @@
 # Ignore the api_key.txt
 api_key.txt
 
+# Ignore the Word Document
+New Microsoft Word Document.docx
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

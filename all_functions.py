@@ -2,6 +2,9 @@
 All the user functions are defined here
 '''
 
+import re
+import pandas as pd
+
 # to get all the required stats of channels
 def get_channel_stats(youtube, channel_ids):
 
@@ -25,7 +28,8 @@ def get_channel_stats(youtube, channel_ids):
         }
         all_data.append(data)
         
-    return pd.DataFrame(all_data)
+    df = pd.DataFrame(all_data)
+    return df
 
 # to get all video ids from a playlist
 def get_vid_ids(youtube, playlist_id):
